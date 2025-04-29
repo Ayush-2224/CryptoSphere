@@ -72,7 +72,7 @@ npm start
 npm install
 
 #Keep it running in one terminal and connect the metamask account with gaunache
-npx ganache --chain.chainId 1337 --chain.networkId 1337
+npx ganache-cli --port 8545 --networkId 1337
 
 npm run migrate:reset:frontend
 
