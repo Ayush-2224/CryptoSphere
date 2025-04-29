@@ -50,7 +50,7 @@ cd CryptoSphere
 
 npm install
 
-#Keep it running in one turminal and connect the metamask account with gaunache
+#Keep it running in one terminal and connect the metamask account with gaunache
 npx ganache-cli --port 8545 --networkId 1337
 
 npm run migrate:reset:frontend
@@ -71,7 +71,7 @@ npm start
 
 npm install
 
-#Keep it running in one turminal and connect the metamask account with gaunache
+#Keep it running in one terminal and connect the metamask account with gaunache
 npx ganache --chain.chainId 1337 --chain.networkId 1337
 
 npm run migrate:reset:frontend
@@ -83,8 +83,7 @@ npm start
 
 ### Running Tests
 
-The project contains two separate test suites - one for Truffle and one for Hardhat. Make sure to use the correct command based on the test files you want to run:
-
+The project contains test suites for Hardhat. 
 
 #### Tests
 
