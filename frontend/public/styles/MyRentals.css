@@ -1,0 +1,27 @@
+.book-description {
+  margin-top: 1rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.book-description p {
+  max-height: 150px;
+  overflow-y: auto;
+  padding-right: 5px;
+  margin-bottom: 10px;
+}
+
+.book-description p::-webkit-scrollbar {
+  width: 5px;
+}
+
+.book-description p::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.book-description p::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+} 
