@@ -32,7 +32,6 @@ contract BookRental is ReentrancyGuard, Ownable {
     event PaymentSent(address indexed to, uint256 amount);
 
     constructor() {
-        // Ownable constructor is called automatically
     }
 
     function listItem(
@@ -141,8 +140,7 @@ contract BookRental is ReentrancyGuard, Ownable {
         if (additionalRent > book.deposit) {
             // Calculate extra payment needed from renter
             extraPaymentNeeded = additionalRent - book.deposit;
-            
-            // Verify the renter has sent the extra payment
+
             require(msg.value >= extraPaymentNeeded, string(abi.encodePacked(
                 "Additional payment required: ",
                 uint2str(extraPaymentNeeded),
