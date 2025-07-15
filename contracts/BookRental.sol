@@ -10,8 +10,8 @@ contract BookRental is ReentrancyGuard, Ownable {
         string author;
         string description;
         string coverImage;
-        string email;       // Contact email of the book owner
-        uint256 dailyPrice;  // Price per minute for testing
+        string email;       
+        uint256 dailyPrice;  
         uint256 deposit;
         address owner;
         address renter;
